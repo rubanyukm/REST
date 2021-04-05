@@ -18,84 +18,98 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="178dp" >
 
         <TextView
-            android:id="@+id/coupon_store"
+            android:id="@+id/Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/coupon_store"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/GenderImage"
+            android:text="@string/name" />
 
         <TextView
-            android:id="@+id/coupon_text"
+            android:id="@+id/Address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/coupon_text"
-            android:layout_below="@id/coupon_store"
-            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardNumber"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/age" />
+
+        <TextView
+            android:id="@+id/Eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Age"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/eyecolor" />
+
+        <TextView
+            android:id="@+id/Company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:text="@string/company" />
 
         <TextView
-            android:id="@+id/coupon_expire_msg"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_below="@id/coupon_text"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/coupon_expire_msg"
-            android:textColor="#E91E63"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/coupon_expire_date"
+            android:id="@+id/CardNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/coupon_text"
-            android:layout_alignStart="@id/coupon_expire_msg"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/coupon_expire_date"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/coupon_code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/coupon_text"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/coupon_code"
-            android:textSize="18sp" />
+            android:layout_marginEnd="20dp"
+            android:text="@string/cardnumber" />
+
+        <ImageView
+            android:id="@+id/GenderImage"
+            android:layout_width="64dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/gender"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <TextView
-            android:id="@+id/coupon_category_msg"
+            android:id="@+id/Email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/coupon_code"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/coupon_category_msg"
-            android:textColor="#072C9B"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/coupon_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/coupon_code"
-            android:layout_alignStart="@id/coupon_category_msg"
-            android:layout_marginStart="92dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/coupon_category"
-            android:textSize="18sp" />
-
+            android:layout_below="@+id/Address"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/email" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

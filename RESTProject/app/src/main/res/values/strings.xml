@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">RESTProject</string>
-    <string name="coupon_store">Coupon Store</string>
-    <string name="coupon_text">Coupon Text</string>
-    <string name="coupon_expire_date">Expiration Date</string>
-    <string name="coupon_category_msg">Category: </string>
-    <string name="coupon_category">Coupon Category</string>
-    <string name="coupon_code">coupon_code</string>
-    <string name="coupon_expire_msg">Expires on: </string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="age">Age</string>
+    <string name="eyecolor">EyeColor</string>
+    <string name="company">Company</string>
+    <string name="cardnumber">CardNumber</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
 </resources>
